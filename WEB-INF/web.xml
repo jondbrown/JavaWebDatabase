@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 
+	<!-- To save as "hello\WEB-INF\web.xml" -->
+ 
+	<servlet>
+      <servlet-name>InsertArtist</servlet-name>
+      <servlet-class>InsertArtistServlet</servlet-class>
+	</servlet>
+ 
+	<servlet>
+      <servlet-name>DeleteArtist</servlet-name>
+      <servlet-class>DeleteArtistServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+      <servlet-name>EditArtist</servlet-name>
+      <servlet-class>EditArtistServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+      <servlet-name>EditArtist2</servlet-name>
+      <servlet-class>EditArtistServlet2</servlet-class>
+	</servlet>
+	<!-- Note: All <servlet> elements MUST be grouped together and
+         placed IN FRONT of the <servlet-mapping> elements -->
+ 
+	<servlet-mapping>
+      <servlet-name>InsertArtist</servlet-name>
+      <url-pattern>/InsertArtist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+      <servlet-name>DeleteArtist</servlet-name>
+      <url-pattern>/DeleteArtist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+      <servlet-name>EditArtist</servlet-name>
+      <url-pattern>/EditArtist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+      <servlet-name>EditArtist2</servlet-name>
+      <url-pattern>/EditArtist2</url-pattern>
+	</servlet-mapping>
+</web-app>
